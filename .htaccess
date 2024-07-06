@@ -1,7 +1,6 @@
 ErrorDocument 404 /index.html
-
 <IfModule mod_rewrite.c>
-  RewriteEngine On RewriteBase /tu_nombre_de_repositorio/ RewriteRule
-  ^index\.html$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond
-  %{REQUEST_FILENAME} !-d RewriteRule . /tu_nombre_de_repositorio/index.html [L]
+  RewriteEngine On RewriteBase /countryApp/ RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /countryApp/index.html [L]
 </IfModule>
